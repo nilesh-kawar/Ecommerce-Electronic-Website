@@ -33,10 +33,10 @@ const CartPopup = () => {
             <h5 className="text-primary font-bold text-xl">$1,498.00 USD</h5>
           </div>
           <div className="flex justify-between">
-            <button className="btn bg-zinc-700 text-white hover:bg-primary">
+            <button className="btn bg-secondary text-white hover:bg-primary">
               View Cart
             </button>
-            <button className="btn bg-zinc-700 text-white hover:bg-primary">
+            <button className="btn bg-secondary text-white hover:bg-primary">
               Checkout
             </button>
           </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Logo from "../../assets/img/logo.webp";
+import Logo from "../../assets/img/logo/logo.webp";
 import NavLinks from "./NavLinks";
 import CartPopup from "./CartPopup";
 
@@ -20,7 +20,9 @@ const Navbar = () => {
   window.addEventListener("scroll", handleScroll);
 
   return (
-    <nav className={`bg-white sticky top-0  ${sticky ? "shadow-lg" : ""}`}>
+    <nav
+      className={`bg-white sticky top-0  z-[999] ${sticky ? "shadow-lg" : ""}`}
+    >
       <div className="flex font-medium justify-between items-center py-2 px-3 md:px-6 md:py-0 ">
         {/* Logo  */}
         <div className="z-50 md:py-5 px-3 md:w-auto w-full flex justify-between">

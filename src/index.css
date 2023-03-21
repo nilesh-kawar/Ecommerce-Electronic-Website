@@ -9,14 +9,21 @@
         font-weight: 600;
         padding: 10px 32px;
         border-radius: 50px;
+        transition-duration: 300ms;
     }
-  }
+}
 
 body{
-    /* background-color: #413e3e; */
     font-family: 'Karla', sans-serif;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-  }
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

@@ -40,8 +40,8 @@ const NavLinks = () => {
               </span>
             </h1>
             {link.submenu && (
-              <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block ">
+              <div key={Math.random()}>
+                <div className="absolute top-30 hidden group-hover:md:block hover:md:block ">
                   <div className="bg-white p-5 grid grid-cols-3 gap-10 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none capitalize">
                     {link.sublinks.map(mysublinks => (
                       <div>
@@ -67,13 +67,14 @@ const NavLinks = () => {
           </div>
           {/* Mobile menus */}
           <div
+            key={Math.random()}
             className={`
             ${heading === link.name ? "md:hidden" : "hidden"}
           `}
           >
             {/* sublinks */}
             {link.sublinks.map(slinks => (
-              <div>
+              <div key={Math.random()}>
                 <div>
                   <h1
                     onClick={() =>
