@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { productData } from "./ProductData";
+import { productData } from "../Data/ProductData";
 
 const ProductCardSlider = () => {
   return (
@@ -9,6 +9,7 @@ const ProductCardSlider = () => {
         <div className="flex">
           {productData.map((item, i) => (
             <ProductCard
+              key={item.id}
               img1={item.img1}
               img2={item.img2}
               isSoldOut={item.isSoldOut}

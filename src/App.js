@@ -12,6 +12,7 @@ import LatestProducts from "./components/ProductCard/LatestProducts";
 import PropertyDetails from "./pages/PropertyDetails";
 import SubBanner from "./components/SubBanner/SubBanner";
 import OfferBanner from "./components/SubBanner/OfferBanner";
+import PopularProducts from "./components/PopularProducts/PopularProducts";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <SubBanner />
       <LatestProducts />
       <OfferBanner />
+      <PopularProducts />
       <Footer />
     </div>
   );
