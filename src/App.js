@@ -4,12 +4,13 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero/Hero";
-import Categories from "./components/Categories/Trending";
+import TrendingCategories from "./components/Categories/Trending";
+import LatestProducts from "./components/ProductCard/LatestProducts";
 
 // import Pages
 // import Home from "./pages/Home";
 import PropertyDetails from "./pages/PropertyDetails";
-import ProductCard from "./components/ProductCard/ProductCard";
+import SubBanner from "./components/SubBanner/SubBanner";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Route path="/property/:id" element={<PropertyDetails />} />
       </Routes>
       <Hero />
-      <Categories />
-      <ProductCard />
+      <TrendingCategories />
+      <SubBanner />
+      <LatestProducts />
       <Footer />
     </div>
   );
