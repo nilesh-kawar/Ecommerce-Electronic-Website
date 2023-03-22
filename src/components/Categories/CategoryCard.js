@@ -1,5 +1,5 @@
 import React from "react";
-import { categoriesData } from "./CategoryData";
+import { categoriesData } from "../Data/CategoryData";
 
 const CategoryCard = () => {
   return (

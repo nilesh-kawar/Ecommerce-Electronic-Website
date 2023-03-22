@@ -4,9 +4,9 @@ import { FaBalanceScaleLeft, FaBan } from "react-icons/fa";
 import { BsBag } from "react-icons/bs";
 import Tooltip from "./ToolTip";
 
-const ProductCard = ({ img1, img2, isSoldOut, name, price, prevPrice }) => {
+const ProductCard = ({ key, img1, img2, isSoldOut, name, price, prevPrice }) => {
   return (
-    <div className="relative w-max m-2 pb-5 px-1 bg-white border border-gray-200 rounded-lg shadow-xl group duration-1000 overflow-hidden">
+    <div key={key} className="relative w-max m-2 pb-5 px-1 bg-white border border-gray-200 rounded-lg shadow-xl group duration-1000 overflow-hidden">
       <img
         className="p-2 absolute rounded-t-lg w-64 group-hover:scale-110 transition-all duration-1000 group-hover:opacity-1"
         src={img1}
