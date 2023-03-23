@@ -12,8 +12,8 @@ const ProductSlider = ({ showArrow, component }) => {
 
   const handleMouseDown = e => {
     setDragging(true);
-    setStartX(e.pageX - sliderRef.current.offsetLeft);
-    setScrollLeft(sliderRef.current.scrollLeft);
+    setStartX(e.pageX - sliderRef.current.offsetLeft); //offsetLeft returns the position from left
+    setScrollLeft(sliderRef.current.scrollLeft); //scrollLeft will return  how much px sllides scrolled left
   };
 
   const handleMouseMove = e => {
@@ -29,7 +29,7 @@ const ProductSlider = ({ showArrow, component }) => {
   };
 
   const handlePreviousClick = () => {
-    sliderRef.current.scrollLeft -= sliderRef.current.offsetWidth;
+    sliderRef.current.scrollLeft -= sliderRef.current.offsetWidth; //offsetWidth returns width of div
   };
 
   const handleNextClick = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Logo from "../../assets/img/logo/logo.webp";
+import Logo from "../../assets/img/logo/logo.png";
 import NavLinks from "./NavLinks";
 import CartPopup from "./CartPopup";
 

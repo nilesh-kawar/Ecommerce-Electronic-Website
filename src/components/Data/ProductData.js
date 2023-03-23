@@ -22,8 +22,8 @@ export const productData = [
     img1: iphone1,
     img2: iphone4,
     isSoldOut: true,
-    category: 'iphone',
-    categoryId: 2
+    category: "iphone",
+    categoryId: 2,
   },
   {
     id: 2,
@@ -34,8 +34,8 @@ export const productData = [
     img1: iwatch,
     img2: airpods,
     isSoldOut: false,
-    category: 'accessories',
-    categoryId: 1
+    category: "accessories",
+    categoryId: 1,
   },
   {
     id: 3,
@@ -46,8 +46,8 @@ export const productData = [
     img1: macbook,
     img2: ipad1,
     isSoldOut: false,
-    category: 'laptop',
-    categoryId: 3
+    category: "laptop",
+    categoryId: 3,
   },
   {
     id: 4,
@@ -58,8 +58,8 @@ export const productData = [
     img1: ipad2,
     img2: laptop1,
     isSoldOut: false,
-    category: 'iphone',
-    categoryId: 2
+    category: "iphone",
+    categoryId: 2,
   },
   {
     id: 5,
@@ -70,8 +70,8 @@ export const productData = [
     img1: speaker,
     img2: iphone2,
     isSoldOut: true,
-    category: 'accessories',
-    categoryId: 1
+    category: "accessories",
+    categoryId: 1,
   },
   {
     id: 6,
@@ -82,20 +82,8 @@ export const productData = [
     img1: otgc,
     img2: iphone4,
     isSoldOut: false,
-    category: 'accessories',
-    categoryId: 1
-  },
-  {
-    id: 61,
-    name: "Apple Safe Charger",
-    price: "85.00",
-    prevPrice: "",
-    rating: "3",
-    img1: headphone,
-    img2: iwatch,
-    isSoldOut: false,
-    category: 'accessories',
-    categoryId: 1
+    category: "accessories",
+    categoryId: 1,
   },
   {
     id: 7,
@@ -106,8 +94,8 @@ export const productData = [
     img1: headphone,
     img2: iphone2,
     isSoldOut: false,
-    category: 'iphone',
-    categoryId: 2
+    category: "iphone",
+    categoryId: 2,
   },
   {
     id: 8,
@@ -118,8 +106,8 @@ export const productData = [
     img1: airpods,
     img2: iphone3,
     isSoldOut: false,
-    category: 'accessories',
-    categoryId: 1
+    category: "accessories",
+    categoryId: 1,
   },
   {
     id: 9,
@@ -130,8 +118,8 @@ export const productData = [
     img1: laptop1,
     img2: iwatch,
     isSoldOut: false,
-    category: 'laptop',
-    categoryId: 3
+    category: "laptop",
+    categoryId: 3,
   },
   {
     id: 10,
@@ -142,7 +130,7 @@ export const productData = [
     img1: otgc,
     img2: iphone4,
     isSoldOut: true,
-    category: 'laptop',
-    categoryId: 3
+    category: "laptop",
+    categoryId: 3,
   },
 ];
