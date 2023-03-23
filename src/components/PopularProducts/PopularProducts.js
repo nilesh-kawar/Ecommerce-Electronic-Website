@@ -10,6 +10,7 @@ const PopularProducts = () => {
   function handleCategoryClick(category) {
     setSelectedCategory(category);
   }
+
   const filteredProducts = selectedCategory
     ? productData.filter((item) => item.categoryId === selectedCategory)
     : [];

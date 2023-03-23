@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="tracking-wide uppercase dark:text-gray-50">
+            <h3 className="tracking-wide uppercase text-lg font-semibold text-slate-800">
               Company
             </h3>
             <ul className="space-y-1">
@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className="uppercase dark:text-gray-50">Developers</h3>
+            <h3 className="uppercase text-lg font-semibold text-slate-800">Developers</h3>
             <ul className="space-y-1">
               <li>
                 <a href="#">Public API</a>
@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-3">
-            <div className="uppercase dark:text-gray-50">Social media</div>
+            <div className="uppercase text-lg font-semibold text-slate-800">Social media</div>
             <div className="flex justify-start space-x-3">
               <a href="#" title="Facebook" className="flex items-center p-1">
                 <svg
