@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./MyLinks";
+import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
@@ -8,8 +9,8 @@ const NavLinks = () => {
   return (
     <>
       {links.map((link, i) => (
-        <div>
-          <div key={i} className="text-left md:cursor-pointer group">
+        <div key={i}>
+          <div className="text-left md:cursor-pointer group">
             <h1
               className="py-7 flex justify-between items-center font-semibold md:pr-0 pr-5 group hover:text-primary duration-300"
               onClick={() => {
@@ -24,11 +25,7 @@ const NavLinks = () => {
                   link.sublinks.length > 0 ? "block" : "hidden"
                 }`}
               >
-                <ion-icon
-                  name={`${
-                    heading === link.name ? "chevron-up" : "chevron-down"
-                  }`}
-                ></ion-icon>
+                {heading === link.name ? <FiChevronUp /> : <FiChevronDown />}
               </span>
               {/* Web View Arrows  */}
               <span
@@ -36,7 +33,7 @@ const NavLinks = () => {
                   link.sublinks.length > 0 ? "md:block" : "md:hidden"
                 } hidden group-hover:rotate-180 group-hover:-mt-2`}
               >
-                <ion-icon name="chevron-down"></ion-icon>
+                <FiChevronDown />
               </span>
             </h1>
             {link.submenu && (
@@ -44,12 +41,12 @@ const NavLinks = () => {
                 <div className="absolute top-30 hidden group-hover:md:block hover:md:block ">
                   <div className="bg-white p-5 grid grid-cols-3 gap-10 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none capitalize">
                     {link.sublinks.map(mysublinks => (
-                      <div>
+                      <div key={Math.random()}>
                         <h1 className="text-lg font-semibold">
                           {mysublinks.Head}
                         </h1>
-                        {mysublinks.sublink.map(slink => (
-                          <li className="text-sm text-gray-600 my-2.5">
+                        {mysublinks.sublink.map((slink, i) => (
+                          <li key={i} className="text-sm text-gray-600 my-2.5">
                             <Link
                               to={slink.link}
                               className="hover:text-primary"
@@ -87,13 +84,11 @@ const NavLinks = () => {
                     {slinks.Head}
 
                     <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <ion-icon
-                        name={`${
-                          subHeading === slinks.Head
-                            ? "chevron-up"
-                            : "chevron-down"
-                        }`}
-                      ></ion-icon>
+                      {subHeading === slinks.Head ? (
+                        <FiChevronUp />
+                      ) : (
+                        <FiChevronDown />
+                      )}
                     </span>
                   </h1>
                   <div
@@ -101,8 +96,8 @@ const NavLinks = () => {
                       subHeading === slinks.Head ? "md:hidden" : "hidden"
                     }`}
                   >
-                    {slinks.sublink.map(slink => (
-                      <li className="py-3 pl-14">
+                    {slinks.sublink.map((slink, i) => (
+                      <li key={i} className="py-3 pl-14">
                         <Link to={slink.link}>{slink.name}</Link>
                       </li>
                     ))}

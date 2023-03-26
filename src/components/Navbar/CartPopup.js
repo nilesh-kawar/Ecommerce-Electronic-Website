@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const CartPopup = () => {
   return (
@@ -23,8 +24,8 @@ const CartPopup = () => {
                 </h6>
                 <h4 className="text-primary text-xl font-bold mt-1">$999.00</h4>
               </div>
-              <div className="px-2 text-slate-600 flex items-center">
-                <ion-icon name="close-circle-outline"></ion-icon>
+              <div className="px-2 text-slate-600 flex items-center cursor-pointer hover:text-primary">
+                <AiOutlineCloseCircle />
               </div>
             </div>
           </div>

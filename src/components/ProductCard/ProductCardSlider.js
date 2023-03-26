@@ -9,7 +9,7 @@ const ProductCardSlider = () => {
         <div className="flex">
           {productData.map((item, i) => (
             <ProductCard
-              key={item.id}
+              id={item.id}
               img1={item.img1}
               img2={item.img2}
               isSoldOut={item.isSoldOut}

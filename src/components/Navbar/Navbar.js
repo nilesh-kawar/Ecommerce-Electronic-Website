@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-
 import Logo from "../../assets/img/logo/logo.png";
 import NavLinks from "./NavLinks";
 import CartPopup from "./CartPopup";
+import { AiOutlineHeart } from "react-icons/ai";
+import { FiMenu } from "react-icons/fi";
+import { IoMdClose } from "react-icons/io";
+import { BsBag } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import SearchPopup from "../SearchBar/SearchPopup";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +31,9 @@ const Navbar = () => {
       <div className="flex font-medium justify-between items-center py-2 px-3 md:px-6 md:py-0 ">
         {/* Logo  */}
         <div className="z-50 md:py-5 px-3 md:w-auto w-full flex justify-between">
-          <img src={Logo} alt="logo" className="md:cursor-pointer h-12" />
+          <Link to={"/"}>
+            <img src={Logo} alt="logo" className="md:cursor-pointer h-12" />
+          </Link>
         </div>
         {/* Web Menu Content  */}
         <ul className="md:flex hidden uppercase items-center gap-8 ">
@@ -35,25 +42,27 @@ const Navbar = () => {
         {/* Right Side Icons  */}
         <div className="flex items-center text-3xl space-x-4 font-semibold">
           <button className="hover:text-primary duration-300">
-            <ion-icon name="search-outline"></ion-icon>
+            {/* <BiSearch onClick={handleOpenModal} /> */}
+            <SearchPopup />
           </button>
           <button className="hover:text-primary duration-300">
-            <ion-icon name="heart-outline"></ion-icon>
+            <AiOutlineHeart />
           </button>
-          <button className="relative group py-7">
-            <ion-icon name="bag-outline"></ion-icon>
+          <div className="relative group py-7">
+            <BsBag />
             <span className="absolute bg-primary rounded-full w-6 h-6 text-white text-xs leading-6 text-center font-bold -right-2 top-11">
               1
             </span>
             {/* Cart Popup  */}
             <CartPopup />
-          </button>
+          </div>
           {/* Hamberger  */}
           <div
             className="text-3xl md:hidden z-50 pr-2 hover:text-primary duration-300"
             onClick={() => setOpen(!open)}
           >
-            <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
+            {open ? <IoMdClose /> : <FiMenu />}
+            {/* <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon> */}
           </div>
         </div>
         {/* Mobile nav */}

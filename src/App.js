@@ -5,9 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 
 // import Pages
-// import Home from "./pages/Home";
-import ProductDetails from "./pages/ProductDetails";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/products" element={<Home />} />
+        <Route path="/products/:productId" element={<ProductDetails />} />
       </Routes>
       <Footer />
     </div>
