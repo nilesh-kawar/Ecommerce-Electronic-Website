@@ -48,14 +48,14 @@ const Navbar = () => {
           <button className="hover:text-primary duration-300">
             <AiOutlineHeart />
           </button>
-          <div className="relative group py-7">
+          <button className="relative group py-7">
             <BsBag />
             <span className="absolute bg-primary rounded-full w-6 h-6 text-white text-xs leading-6 text-center font-bold -right-2 top-11">
               1
             </span>
             {/* Cart Popup  */}
             <CartPopup />
-          </div>
+          </button>
           {/* Hamberger  */}
           <div
             className="text-3xl md:hidden z-50 pr-2 hover:text-primary duration-300"

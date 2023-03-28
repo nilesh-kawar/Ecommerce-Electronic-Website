@@ -7,16 +7,15 @@ import OfferBanner from "../components/SubBanner/OfferBanner";
 import PopularProducts from "../components/PopularProducts/PopularProducts";
 import Blog from "../components/Blog/Blog";
 
-const Home = () => {
+const Home = ({ addToCart }) => {
   return (
     <div>
       <Hero />
-
       <TrendingCategories />
       <SubBanner />
       <LatestProducts />
       <OfferBanner />
-      <PopularProducts />
+      <PopularProducts addToCart={addToCart} />
       <Blog />
     </div>
   );

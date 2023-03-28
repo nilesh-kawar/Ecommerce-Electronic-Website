@@ -3,7 +3,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const CartPopup = () => {
   return (
-    <div>
+    <div >
       <div className="absolute top-20 -right-12 md:right-3 hidden group-hover:block hover:block">
         <div className="bg-white  p-3 md:p-5 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none capitalize">
           <div className="max-h-72 overflow-auto">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { links } from "./MyLinks";
+import { links } from "../Data/NavbarData";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 
 const NavLinks = () => {
@@ -21,17 +21,15 @@ const NavLinks = () => {
               {link.name}
               {/* Mobile View Arrows  */}
               <span
-                className={`text-xl md:hidden inline ${
-                  link.sublinks.length > 0 ? "block" : "hidden"
-                }`}
+                className={`text-xl md:hidden inline ${link.sublinks.length > 0 ? "block" : "hidden"
+                  }`}
               >
                 {heading === link.name ? <FiChevronUp /> : <FiChevronDown />}
               </span>
               {/* Web View Arrows  */}
               <span
-                className={`text-xl md:mt-1 md:ml-2  ${
-                  link.sublinks.length > 0 ? "md:block" : "md:hidden"
-                } hidden group-hover:rotate-180 group-hover:-mt-2`}
+                className={`text-xl md:mt-1 md:ml-2  ${link.sublinks.length > 0 ? "md:block" : "md:hidden"
+                  } hidden group-hover:rotate-180 group-hover:-mt-2`}
               >
                 <FiChevronDown />
               </span>
@@ -92,9 +90,8 @@ const NavLinks = () => {
                     </span>
                   </h1>
                   <div
-                    className={`${
-                      subHeading === slinks.Head ? "md:hidden" : "hidden"
-                    }`}
+                    className={`${subHeading === slinks.Head ? "md:hidden" : "hidden"
+                      }`}
                   >
                     {slinks.sublink.map((slink, i) => (
                       <li key={i} className="py-3 pl-14">

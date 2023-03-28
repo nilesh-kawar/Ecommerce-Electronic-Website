@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AiOutlineStar,
   AiFillStar,
@@ -15,6 +15,9 @@ const ProductDetail = () => {
   console.log(product.name);
   let [quantity, setQuantity] = useState(1);
   const [img, setImg] = useState(product.img1);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const increaseQuantity = () => {
     if (quantity < 10) {

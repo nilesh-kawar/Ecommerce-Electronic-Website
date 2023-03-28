@@ -34,12 +34,12 @@ export const productData = [
     img1: iwatch,
     img2: airpods,
     isSoldOut: false,
-    category: "accessories",
+    category: "watch",
     categoryId: 1,
   },
   {
     id: 3,
-    name: "Apple Mabook Pro",
+    name: "Apple Macbook Pro",
     price: "999.00",
     prevPrice: "1599.00",
     rating: "4",
@@ -58,7 +58,7 @@ export const productData = [
     img1: ipad2,
     img2: laptop1,
     isSoldOut: false,
-    category: "iphone",
+    category: "tablet",
     categoryId: 2,
   },
   {
@@ -70,7 +70,7 @@ export const productData = [
     img1: speaker,
     img2: iphone2,
     isSoldOut: true,
-    category: "accessories",
+    category: "speakers",
     categoryId: 1,
   },
   {
@@ -82,7 +82,7 @@ export const productData = [
     img1: otgc,
     img2: iphone4,
     isSoldOut: false,
-    category: "accessories",
+    category: "watch",
     categoryId: 1,
   },
   {
@@ -94,7 +94,7 @@ export const productData = [
     img1: headphone,
     img2: iphone2,
     isSoldOut: false,
-    category: "iphone",
+    category: "headphones",
     categoryId: 2,
   },
   {
@@ -106,7 +106,7 @@ export const productData = [
     img1: airpods,
     img2: iphone3,
     isSoldOut: false,
-    category: "accessories",
+    category: "airpod",
     categoryId: 1,
   },
   {
@@ -118,7 +118,7 @@ export const productData = [
     img1: laptop1,
     img2: iwatch,
     isSoldOut: false,
-    category: "laptop",
+    category: "watch",
     categoryId: 3,
   },
   {

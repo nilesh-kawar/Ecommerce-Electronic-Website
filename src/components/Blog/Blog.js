@@ -16,8 +16,8 @@ const Blog = () => {
           </h6>
         </div>
         <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-          {blogData.map(blog => (
-            <article key={blog.id} className="flex flex-col cursor-pointer">
+          {blogData.map((blog, i) => (
+            <article key={i} className="flex flex-col cursor-pointer">
               <a href="/home" aria-label="New iPhone launched">
                 <img
                   alt=""
